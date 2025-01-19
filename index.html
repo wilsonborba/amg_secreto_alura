@@ -16,8 +16,11 @@
             <h1 class="main-title">Amigo Secreto</h1>
             <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
         </header>
+
+
         
         <section class="input-section">
+            
             <h2 class="section-title">Digite o nome dos seus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
@@ -28,9 +31,13 @@
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <button class="button-draw" onclick="sortearAmigo()"  id="play" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
+                </button>
+                <button class="button-draw" onclick="limparLista()" id="trash" aria-label="Limpar lista amigo secreto">
+                    <img src="assets/trash_garbage.png" alt="Ícone para deletar">
+                    Limpar lista
                 </button>
             </div>
         </section>
